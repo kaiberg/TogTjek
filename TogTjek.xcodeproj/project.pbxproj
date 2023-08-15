@@ -14,6 +14,14 @@
 		2A3594AD2A8BEFE800A45BD8 /* TogTjekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594AC2A8BEFE800A45BD8 /* TogTjekTests.swift */; };
 		2A3594B72A8BEFE800A45BD8 /* TogTjekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594B62A8BEFE800A45BD8 /* TogTjekUITests.swift */; };
 		2A3594B92A8BEFE800A45BD8 /* TogTjekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594B82A8BEFE800A45BD8 /* TogTjekUITestsLaunchTests.swift */; };
+		2A3594C82A8BF42500A45BD8 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594C72A8BF42500A45BD8 /* Trip.swift */; };
+		2A3594CA2A8BF48D00A45BD8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594C92A8BF48D00A45BD8 /* Station.swift */; };
+		2A3594CD2A8BF5B800A45BD8 /* TripNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594CC2A8BF5B800A45BD8 /* TripNode.swift */; };
+		2A3594CF2A8BF68F00A45BD8 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594CE2A8BF68F00A45BD8 /* Train.swift */; };
+		2A3594D42A8C026500A45BD8 /* Testington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594D32A8C026500A45BD8 /* Testington.swift */; };
+		2A3594D62A8C049B00A45BD8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A3594D52A8C049B00A45BD8 /* Localizable.xcstrings */; };
+		2A3594D82A8C05F900A45BD8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594D72A8C05F900A45BD8 /* Settings.swift */; };
+		2A3594DC2A8C0F7000A45BD8 /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594DB2A8C0F7000A45BD8 /* Trips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,16 @@
 		2A3594B22A8BEFE800A45BD8 /* TogTjekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogTjekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3594B62A8BEFE800A45BD8 /* TogTjekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogTjekUITests.swift; sourceTree = "<group>"; };
 		2A3594B82A8BEFE800A45BD8 /* TogTjekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogTjekUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2A3594C72A8BF42500A45BD8 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		2A3594C92A8BF48D00A45BD8 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		2A3594CC2A8BF5B800A45BD8 /* TripNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripNode.swift; sourceTree = "<group>"; };
+		2A3594CE2A8BF68F00A45BD8 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		2A3594D32A8C026500A45BD8 /* Testington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testington.swift; sourceTree = "<group>"; };
+		2A3594D52A8C049B00A45BD8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		2A3594D72A8C05F900A45BD8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2A3594D92A8C0C3B00A45BD8 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		2A3594DA2A8C0D8E00A45BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A3594DB2A8C0F7000A45BD8 /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +112,15 @@
 		2A35949A2A8BEFE500A45BD8 /* TogTjek */ = {
 			isa = PBXGroup;
 			children = (
+				2A3594DA2A8C0D8E00A45BD8 /* Info.plist */,
+				2A3594C62A8BF3FF00A45BD8 /* View */,
+				2A3594C52A8BF3F400A45BD8 /* Model */,
 				2A35949B2A8BEFE500A45BD8 /* TogTjekApp.swift */,
 				2A35949D2A8BEFE500A45BD8 /* ContentView.swift */,
 				2A35949F2A8BEFE700A45BD8 /* Assets.xcassets */,
 				2A3594A12A8BEFE700A45BD8 /* Preview Content */,
+				2A3594D52A8C049B00A45BD8 /* Localizable.xcstrings */,
+				2A3594D92A8C0C3B00A45BD8 /* debug.xcconfig */,
 			);
 			path = TogTjek;
 			sourceTree = "<group>";
@@ -125,6 +148,35 @@
 				2A3594B82A8BEFE800A45BD8 /* TogTjekUITestsLaunchTests.swift */,
 			);
 			path = TogTjekUITests;
+			sourceTree = "<group>";
+		};
+		2A3594C52A8BF3F400A45BD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A3594CB2A8BF59200A45BD8 /* Trip */,
+				2A3594C92A8BF48D00A45BD8 /* Station.swift */,
+				2A3594CE2A8BF68F00A45BD8 /* Train.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A3594C62A8BF3FF00A45BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A3594D32A8C026500A45BD8 /* Testington.swift */,
+				2A3594D72A8C05F900A45BD8 /* Settings.swift */,
+				2A3594DB2A8C0F7000A45BD8 /* Trips.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A3594CB2A8BF59200A45BD8 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				2A3594C72A8BF42500A45BD8 /* Trip.swift */,
+				2A3594CC2A8BF5B800A45BD8 /* TripNode.swift */,
+			);
+			path = Trip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +265,7 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
 			);
 			mainGroup = 2A35948F2A8BEFE500A45BD8;
 			productRefGroup = 2A3594992A8BEFE500A45BD8 /* Products */;
@@ -233,6 +286,7 @@
 			files = (
 				2A3594A32A8BEFE700A45BD8 /* Preview Assets.xcassets in Resources */,
 				2A3594A02A8BEFE700A45BD8 /* Assets.xcassets in Resources */,
+				2A3594D62A8C049B00A45BD8 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3594C82A8BF42500A45BD8 /* Trip.swift in Sources */,
+				2A3594D42A8C026500A45BD8 /* Testington.swift in Sources */,
+				2A3594D82A8C05F900A45BD8 /* Settings.swift in Sources */,
+				2A3594CD2A8BF5B800A45BD8 /* TripNode.swift in Sources */,
 				2A35949E2A8BEFE500A45BD8 /* ContentView.swift in Sources */,
+				2A3594DC2A8C0F7000A45BD8 /* Trips.swift in Sources */,
 				2A35949C2A8BEFE500A45BD8 /* TogTjekApp.swift in Sources */,
+				2A3594CF2A8BF68F00A45BD8 /* Train.swift in Sources */,
+				2A3594CA2A8BF48D00A45BD8 /* Station.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +358,7 @@
 /* Begin XCBuildConfiguration section */
 		2A3594BA2A8BEFE800A45BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3594D92A8C0C3B00A45BD8 /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -354,6 +416,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -410,6 +473,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -424,6 +488,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TogTjek/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TogTjek/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = beef.TogTjek;
+				PRODUCT_BUNDLE_IDENTIFIER = is.beef.TogTjek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -452,6 +518,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TogTjek/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TogTjek/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +530,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = beef.TogTjek;
+				PRODUCT_BUNDLE_IDENTIFIER = is.beef.TogTjek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
