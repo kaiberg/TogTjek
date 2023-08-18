@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A11C3EE2A8F8E41001431CC /* UpcomingTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C3ED2A8F8E41001431CC /* UpcomingTrip.swift */; };
+		2A11C3F02A8F99BD001431CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A11C3EF2A8F99BD001431CC /* README.md */; };
 		2A1A4C0B2A8D2E6E00B3286F /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1A4C0A2A8D2E6E00B3286F /* TripView.swift */; };
 		2A1A4C0D2A8D495F00B3286F /* LanguageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1A4C0C2A8D495F00B3286F /* LanguageOptions.swift */; };
 		2A35949C2A8BEFE500A45BD8 /* TogTjekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35949B2A8BEFE500A45BD8 /* TogTjekApp.swift */; };
@@ -50,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		2A11C3ED2A8F8E41001431CC /* UpcomingTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingTrip.swift; sourceTree = "<group>"; };
+		2A11C3EF2A8F99BD001431CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2A11C3FA2A8F9EAC001431CC /* settings.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = settings.gif; path = ../../../../../../var/folders/lb/hn_9st694xn46r6_8mzncpr40000gn/T/com.sindresorhus.Gifski/TemporaryItems/NSIRD_Gifski_lZy2pe/settings.gif; sourceTree = "<group>"; };
+		2A11C3FB2A8F9EB2001431CC /* trips.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = trips.gif; sourceTree = "<group>"; };
 		2A1A4C0A2A8D2E6E00B3286F /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		2A1A4C0C2A8D495F00B3286F /* LanguageOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOptions.swift; sourceTree = "<group>"; };
 		2A3594982A8BEFE500A45BD8 /* TogTjek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogTjek.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,9 +107,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A11C3F82A8F9EA4001431CC /* img */ = {
+			isa = PBXGroup;
+			children = (
+				2A11C3FA2A8F9EAC001431CC /* settings.gif */,
+				2A11C3FB2A8F9EB2001431CC /* trips.gif */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		2A35948F2A8BEFE500A45BD8 = {
 			isa = PBXGroup;
 			children = (
+				2A11C3F82A8F9EA4001431CC /* img */,
+				2A11C3EF2A8F99BD001431CC /* README.md */,
 				2A35949A2A8BEFE500A45BD8 /* TogTjek */,
 				2A3594AB2A8BEFE800A45BD8 /* TogTjekTests */,
 				2A3594B52A8BEFE800A45BD8 /* TogTjekUITests */,
@@ -331,6 +346,7 @@
 			files = (
 				2A3594A32A8BEFE700A45BD8 /* Preview Assets.xcassets in Resources */,
 				2A3594A02A8BEFE700A45BD8 /* Assets.xcassets in Resources */,
+				2A11C3F02A8F99BD001431CC /* README.md in Resources */,
 				2A3594D62A8C049B00A45BD8 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

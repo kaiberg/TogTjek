@@ -100,7 +100,20 @@
 
     },
     "SELECTED_LANGUAGE" : {
-
+      "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Danish"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        }
+      }
     },
     "SELECTED_LANGUAGE.NAME" : {
       "extractionState" : "stale",
