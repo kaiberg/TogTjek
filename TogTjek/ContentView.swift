@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {        
+    var body: some View {
         TabView {
-            Trips()
-                .tabItem {
-                    Label("Trips", systemImage: "airplane")
-                }
+            NavigationStack {
+                Trips()
+                    .navigationTitle("Trips")
+                    .navigationDestination(for: IdentifiableString.self) { string in
+                        TripDetail(trip: string)
+                    }
+            }                .tabItem {
+                Label("Trips", systemImage: "airplane")
+            }
+            
             Testington()
                 .tabItem {
                     Label("Testing", systemImage: "testtube.2")
@@ -23,7 +29,7 @@ struct ContentView: View {
                 .tabItem { Label("Settings", systemImage: "gear") }
         }
     }
-
+    
 }
 
 #Preview {
