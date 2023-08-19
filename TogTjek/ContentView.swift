@@ -12,6 +12,13 @@ struct ContentView: View {
         TabView {
             NavigationStack {
                 Trips()
+                    .toolbar {
+                        NavigationLink {
+                            TripFinder()
+                        } label: {
+                            Image(systemName: "plus")
+                        }
+                    }
                     .navigationTitle("Trips")
                     .navigationDestination(for: IdentifiableString.self) { string in
                         TripDetail(trip: string)

@@ -10,6 +10,9 @@
     "+5" : {
 
     },
+    "3:18 PM" : {
+
+    },
     "19:59" : {
 
     },
@@ -52,6 +55,9 @@
           }
         }
       }
+    },
+    "Date" : {
+
     },
     "Departure Bus 151: " : {
 
@@ -99,6 +105,9 @@
     "Odense" : {
 
     },
+    "Search station" : {
+
+    },
     "SELECTED_LANGUAGE" : {
       "localizations" : {
         "da" : {
@@ -135,6 +144,9 @@
           }
         }
       }
+    },
+    "test api Searcj" : {
+
     },
     "Testing" : {
 

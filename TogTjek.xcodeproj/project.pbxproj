@@ -30,6 +30,9 @@
 		2A8A631A2A8E7ADA008BD179 /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A63192A8E7ADA008BD179 /* TripDetail.swift */; };
 		2A8A631D2A8E7BDF008BD179 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A631C2A8E7BDF008BD179 /* SampleData.swift */; };
 		2A8A631F2A8E7CC4008BD179 /* ProminentTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */; };
+		2AB33A362A90B85E00DF7D1A /* GetLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB33A352A90B85E00DF7D1A /* GetLocations.swift */; };
+		2AB33A382A90BB0D00DF7D1A /* baseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB33A372A90BB0D00DF7D1A /* baseURL.swift */; };
+		2AB33A3A2A90D85400DF7D1A /* TripFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB33A392A90D85400DF7D1A /* TripFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		2A8A63192A8E7ADA008BD179 /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
 		2A8A631C2A8E7BDF008BD179 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProminentTripView.swift; sourceTree = "<group>"; };
+		2AB33A352A90B85E00DF7D1A /* GetLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocations.swift; sourceTree = "<group>"; };
+		2AB33A372A90BB0D00DF7D1A /* baseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseURL.swift; sourceTree = "<group>"; };
+		2AB33A392A90D85400DF7D1A /* TripFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,7 @@
 		2A3594C52A8BF3F400A45BD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AB33A332A90B75300DF7D1A /* Api */,
 				2A8A631B2A8E7BD1008BD179 /* SampleData */,
 				2A3594CB2A8BF59200A45BD8 /* Trip */,
 				2A3594C92A8BF48D00A45BD8 /* Station.swift */,
@@ -227,6 +234,7 @@
 				2A8A63192A8E7ADA008BD179 /* TripDetail.swift */,
 				2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */,
 				2A11C3ED2A8F8E41001431CC /* UpcomingTrip.swift */,
+				2AB33A392A90D85400DF7D1A /* TripFinder.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -237,6 +245,23 @@
 				2A8A631C2A8E7BDF008BD179 /* SampleData.swift */,
 			);
 			path = SampleData;
+			sourceTree = "<group>";
+		};
+		2AB33A332A90B75300DF7D1A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2AB33A342A90B84D00DF7D1A /* Location */,
+				2AB33A372A90BB0D00DF7D1A /* baseURL.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		2AB33A342A90B84D00DF7D1A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				2AB33A352A90B85E00DF7D1A /* GetLocations.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,11 +403,14 @@
 				2A3594D82A8C05F900A45BD8 /* Settings.swift in Sources */,
 				2A3594CD2A8BF5B800A45BD8 /* TripNode.swift in Sources */,
 				2A8A631F2A8E7CC4008BD179 /* ProminentTripView.swift in Sources */,
+				2AB33A3A2A90D85400DF7D1A /* TripFinder.swift in Sources */,
 				2A35949E2A8BEFE500A45BD8 /* ContentView.swift in Sources */,
 				2A3594DC2A8C0F7000A45BD8 /* Trips.swift in Sources */,
+				2AB33A362A90B85E00DF7D1A /* GetLocations.swift in Sources */,
 				2A3594E02A8C123700A45BD8 /* IdentifiableString.swift in Sources */,
 				2A1A4C0B2A8D2E6E00B3286F /* TripView.swift in Sources */,
 				2A1A4C0D2A8D495F00B3286F /* LanguageOptions.swift in Sources */,
+				2AB33A382A90BB0D00DF7D1A /* baseURL.swift in Sources */,
 				2A8A631A2A8E7ADA008BD179 /* TripDetail.swift in Sources */,
 				2A35949C2A8BEFE500A45BD8 /* TogTjekApp.swift in Sources */,
 				2A3594CF2A8BF68F00A45BD8 /* Train.swift in Sources */,

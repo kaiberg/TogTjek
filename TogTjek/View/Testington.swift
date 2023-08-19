@@ -21,6 +21,14 @@ struct Testington: View {
                     print(apiUrl)
                 }
             }
+            
+            Button("test api Search") {
+                Task {
+                    let data = await GetLocation.getLocations(searchString: "Tommerup")
+                    print("heres the data \(data)")
+                }
+
+            }
         }
         .padding()
     }
