@@ -10,13 +10,13 @@
     "+5" : {
 
     },
-    "3:18 PM" : {
-
-    },
     "19:59" : {
 
     },
     "20:23" : {
+
+    },
+    "Add trip" : {
 
     },
     "Arrivals" : {
@@ -28,6 +28,15 @@
           }
         }
       }
+    },
+    "Arrive by" : {
+
+    },
+    "Build: %@" : {
+
+    },
+    "cancel" : {
+
     },
     "click me" : {
       "localizations" : {
@@ -56,10 +65,7 @@
         }
       }
     },
-    "Date" : {
-
-    },
-    "Departure Bus 151: " : {
+    "Depart" : {
 
     },
     "Departures" : {
@@ -71,6 +77,9 @@
           }
         }
       }
+    },
+    "Every %@" : {
+
     },
     "Hello World" : {
       "localizations" : {
@@ -103,6 +112,18 @@
       }
     },
     "Odense" : {
+
+    },
+    "Picker" : {
+
+    },
+    "Repeat" : {
+
+    },
+    "Results" : {
+
+    },
+    "save" : {
 
     },
     "Search station" : {
@@ -145,10 +166,13 @@
         }
       }
     },
-    "test api Searcj" : {
+    "test api Search" : {
 
     },
     "Testing" : {
+
+    },
+    "Time" : {
 
     },
     "Tommerup" : {
@@ -182,6 +206,9 @@
       }
     },
     "Upcoming" : {
+
+    },
+    "Version: %@" : {
 
     },
     "view2" : {

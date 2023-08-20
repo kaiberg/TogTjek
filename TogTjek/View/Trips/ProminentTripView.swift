@@ -8,27 +8,35 @@
 import SwiftUI
 
 struct ProminentTripView: View {
+    var trip : Leg
+    
     var body: some View {
         HStack(alignment:.top) {
-            TimeInfo(scheduledTime: "19:59", delayedTime: "5")
+            TimeInfo(scheduledTime: trip.origin.time, delayedTime: "5")
             
             VStack {
                 HStack(alignment:.top) {
                     VStack(alignment:.leading) {
                         Text("")
                             .frame(height: 50)
-                        Text("Departure Bus 151: ")
+                        Text(trip.notes.text)
                     }
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     
-                    TimeInfo(scheduledTime: "19:59", delayedTime: "5", alignment: .trailing)
+                    TimeInfo(scheduledTime: trip.destination.time, delayedTime: "5", alignment: .trailing)
                 }
                 
                 VStack(alignment:.leading) {
-                    InfoText(icon: "exclamationmark.triangle.fill", info: "Assens: Rute 130 - 132 - 151 - 152 - 820U - 825U")
-                    InfoText(icon: "exclamationmark.triangle.fill", info: "Bellinge Brogaarrdsvej ensrettes")
-                    InfoText(icon: "info.square", info: "Note: Plustur is flextrafik and you have to book it at least 2 hours before departure by activating \"Price & buy\". Displayed travel times for flextrafik are indicative. Get more information here")
-                    
+                    switch trip.messageList?.message {
+                        case .messageElement(let element):
+                            InfoText(icon: "exclamationmark.triangle.fill", info: element.text.empty)
+                    case .messageElementArray(let array):
+                        ForEach(array) { element in
+                            InfoText(icon: "exclamationmark.triangle.fill", info: element.text.empty)
+                        }
+                    default:
+                        InfoText(icon: "exclamationmark.triangle.fill", info: "I SHOULDNT BE HERE")
+                    }
                 }
             }
             
@@ -68,6 +76,6 @@ struct InfoText: View {
     }
 }
 
-#Preview {
-    ProminentTripView()
-}
+//#Preview {
+//    ProminentTripView()
+//}

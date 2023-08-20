@@ -44,11 +44,15 @@ class LocationList : Decodable {
     }
 }
 
-class Location : Decodable {
+class Location : Decodable, Equatable {
     let name: String
     let x: String
     let y: String
     let id: String
+    
+    static func ==(lhs: Location, rhs: Location) -> Bool {
+        return lhs.name == rhs.name && lhs.x == rhs.x && lhs.y == rhs.y && lhs.id == rhs.id
+    }
 }
 
 class CoordLocation : Decodable {

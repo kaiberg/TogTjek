@@ -11,16 +11,22 @@ struct Settings: View {
     @State var language: String = "Danish"
     
     var body: some View {
-        Section {
-            NavigationStack {
-                List {
-                    Section {
-                        LanguageOptions()
+        VStack {
+            Section {
+                NavigationStack {
+                    List {
+                        Section {
+                            LanguageOptions()
+                        }
                     }
-                }
 
+                }
             }
+            
+            Spacer()
+            VersionInfo()
         }
+
     }
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Testington: View {
+struct Testing: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -35,5 +35,5 @@ struct Testington: View {
 }
 
 #Preview {
-    Testington()
+    Testing()
 }

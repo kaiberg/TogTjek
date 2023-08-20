@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showSheet = false
+    
     var body: some View {
         TabView {
             NavigationStack {
                 Trips()
                     .toolbar {
-                        NavigationLink {
-                            TripFinder()
+                        Button {
+                            showSheet.toggle()
                         } label: {
                             Image(systemName: "plus")
-                        }
+                        }.sheet(isPresented: $showSheet, content: {
+                            TripFinder()
+                        })
                     }
                     .navigationTitle("Trips")
                     .navigationDestination(for: IdentifiableString.self) { string in
@@ -27,7 +31,7 @@ struct ContentView: View {
                 Label("Trips", systemImage: "airplane")
             }
             
-            Testington()
+            Testing()
                 .tabItem {
                     Label("Testing", systemImage: "testtube.2")
                 }

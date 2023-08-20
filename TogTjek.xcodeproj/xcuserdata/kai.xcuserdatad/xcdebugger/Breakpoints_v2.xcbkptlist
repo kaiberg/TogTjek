@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0069EDEA-BFE1-45A7-B112-A48DFBFB7D9E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3182F35C-ABE5-423A-B39A-E0E73FC53071"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TogTjek/Model/Api/Trip/GetTrips.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "GetTrips"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3182F35C-ABE5-423A-B39A-E0E73FC53071 - 5e6bb72ce75a9f8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TogTjek.GetTrips.deinit"
+                  moduleName = "TogTjek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kai/IOS/Beta/TogTjek/TogTjek/Model/Api/Trip/GetTrips.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3182F35C-ABE5-423A-B39A-E0E73FC53071 - f21383dbaa692079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TogTjek.GetTrips.__deallocating_deinit"
+                  moduleName = "TogTjek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kai/IOS/Beta/TogTjek/TogTjek/Model/Api/Trip/GetTrips.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3182F35C-ABE5-423A-B39A-E0E73FC53071 - 1c956a08022640d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TogTjek.GetTrips.__allocating_init() -&gt; TogTjek.GetTrips"
+                  moduleName = "TogTjek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kai/IOS/Beta/TogTjek/TogTjek/Model/Api/Trip/GetTrips.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "3182F35C-ABE5-423A-B39A-E0E73FC53071 - a974340566c1a4f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TogTjek.GetTrips.init() -&gt; TogTjek.GetTrips"
+                  moduleName = "TogTjek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kai/IOS/Beta/TogTjek/TogTjek/Model/Api/Trip/GetTrips.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

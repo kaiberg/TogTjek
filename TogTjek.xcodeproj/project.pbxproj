@@ -22,11 +22,16 @@
 		2A3594CA2A8BF48D00A45BD8 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594C92A8BF48D00A45BD8 /* Station.swift */; };
 		2A3594CD2A8BF5B800A45BD8 /* TripNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594CC2A8BF5B800A45BD8 /* TripNode.swift */; };
 		2A3594CF2A8BF68F00A45BD8 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594CE2A8BF68F00A45BD8 /* Train.swift */; };
-		2A3594D42A8C026500A45BD8 /* Testington.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594D32A8C026500A45BD8 /* Testington.swift */; };
+		2A3594D42A8C026500A45BD8 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594D32A8C026500A45BD8 /* Testing.swift */; };
 		2A3594D62A8C049B00A45BD8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2A3594D52A8C049B00A45BD8 /* Localizable.xcstrings */; };
 		2A3594D82A8C05F900A45BD8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594D72A8C05F900A45BD8 /* Settings.swift */; };
 		2A3594DC2A8C0F7000A45BD8 /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594DB2A8C0F7000A45BD8 /* Trips.swift */; };
 		2A3594E02A8C123700A45BD8 /* IdentifiableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3594DF2A8C123700A45BD8 /* IdentifiableString.swift */; };
+		2A5012742A914FCE009C9433 /* GetTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5012732A914FCE009C9433 /* GetTrips.swift */; };
+		2A5310BF2A90FDA7007E7C33 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5310BE2A90FDA7007E7C33 /* TimePicker.swift */; };
+		2A5310C12A90FDC1007E7C33 /* RepeatPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5310C02A90FDC1007E7C33 /* RepeatPicker.swift */; };
+		2A5310C32A91087C007E7C33 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5310C22A91087C007E7C33 /* Helpers.swift */; };
+		2A5310C52A91294E007E7C33 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5310C42A91294E007E7C33 /* VersionInfo.swift */; };
 		2A8A631A2A8E7ADA008BD179 /* TripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A63192A8E7ADA008BD179 /* TripDetail.swift */; };
 		2A8A631D2A8E7BDF008BD179 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A631C2A8E7BDF008BD179 /* SampleData.swift */; };
 		2A8A631F2A8E7CC4008BD179 /* ProminentTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */; };
@@ -73,13 +78,18 @@
 		2A3594C92A8BF48D00A45BD8 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		2A3594CC2A8BF5B800A45BD8 /* TripNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripNode.swift; sourceTree = "<group>"; };
 		2A3594CE2A8BF68F00A45BD8 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
-		2A3594D32A8C026500A45BD8 /* Testington.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testington.swift; sourceTree = "<group>"; };
+		2A3594D32A8C026500A45BD8 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
 		2A3594D52A8C049B00A45BD8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		2A3594D72A8C05F900A45BD8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		2A3594D92A8C0C3B00A45BD8 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		2A3594DA2A8C0D8E00A45BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A3594DB2A8C0F7000A45BD8 /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
 		2A3594DF2A8C123700A45BD8 /* IdentifiableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableString.swift; sourceTree = "<group>"; };
+		2A5012732A914FCE009C9433 /* GetTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTrips.swift; sourceTree = "<group>"; };
+		2A5310BE2A90FDA7007E7C33 /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		2A5310C02A90FDC1007E7C33 /* RepeatPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatPicker.swift; sourceTree = "<group>"; };
+		2A5310C22A91087C007E7C33 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		2A5310C42A91294E007E7C33 /* VersionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfo.swift; sourceTree = "<group>"; };
 		2A8A63192A8E7ADA008BD179 /* TripDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetail.swift; sourceTree = "<group>"; };
 		2A8A631C2A8E7BDF008BD179 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProminentTripView.swift; sourceTree = "<group>"; };
@@ -203,7 +213,7 @@
 			children = (
 				2A8A63182A8E7A8F008BD179 /* Trips */,
 				2A8A63172A8E7A7B008BD179 /* Settings */,
-				2A3594D32A8C026500A45BD8 /* Testington.swift */,
+				2A3594D32A8C026500A45BD8 /* Testing.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,11 +227,30 @@
 			path = Trip;
 			sourceTree = "<group>";
 		};
+		2A5012722A914FBF009C9433 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				2A5012732A914FCE009C9433 /* GetTrips.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		2A5310BD2A90FD8D007E7C33 /* TripFinder */ = {
+			isa = PBXGroup;
+			children = (
+				2AB33A392A90D85400DF7D1A /* TripFinder.swift */,
+				2A5310BE2A90FDA7007E7C33 /* TimePicker.swift */,
+				2A5310C02A90FDC1007E7C33 /* RepeatPicker.swift */,
+			);
+			path = TripFinder;
+			sourceTree = "<group>";
+		};
 		2A8A63172A8E7A7B008BD179 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				2A3594D72A8C05F900A45BD8 /* Settings.swift */,
 				2A1A4C0C2A8D495F00B3286F /* LanguageOptions.swift */,
+				2A5310C42A91294E007E7C33 /* VersionInfo.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -229,12 +258,12 @@
 		2A8A63182A8E7A8F008BD179 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
+				2A5310BD2A90FD8D007E7C33 /* TripFinder */,
 				2A3594DB2A8C0F7000A45BD8 /* Trips.swift */,
 				2A1A4C0A2A8D2E6E00B3286F /* TripView.swift */,
 				2A8A63192A8E7ADA008BD179 /* TripDetail.swift */,
 				2A8A631E2A8E7CC4008BD179 /* ProminentTripView.swift */,
 				2A11C3ED2A8F8E41001431CC /* UpcomingTrip.swift */,
-				2AB33A392A90D85400DF7D1A /* TripFinder.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -250,8 +279,10 @@
 		2AB33A332A90B75300DF7D1A /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				2A5012722A914FBF009C9433 /* Trip */,
 				2AB33A342A90B84D00DF7D1A /* Location */,
 				2AB33A372A90BB0D00DF7D1A /* baseURL.swift */,
+				2A5310C22A91087C007E7C33 /* Helpers.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -399,10 +430,13 @@
 			files = (
 				2A3594C82A8BF42500A45BD8 /* Trip.swift in Sources */,
 				2A8A631D2A8E7BDF008BD179 /* SampleData.swift in Sources */,
-				2A3594D42A8C026500A45BD8 /* Testington.swift in Sources */,
+				2A3594D42A8C026500A45BD8 /* Testing.swift in Sources */,
 				2A3594D82A8C05F900A45BD8 /* Settings.swift in Sources */,
+				2A5310BF2A90FDA7007E7C33 /* TimePicker.swift in Sources */,
 				2A3594CD2A8BF5B800A45BD8 /* TripNode.swift in Sources */,
 				2A8A631F2A8E7CC4008BD179 /* ProminentTripView.swift in Sources */,
+				2A5310C52A91294E007E7C33 /* VersionInfo.swift in Sources */,
+				2A5310C12A90FDC1007E7C33 /* RepeatPicker.swift in Sources */,
 				2AB33A3A2A90D85400DF7D1A /* TripFinder.swift in Sources */,
 				2A35949E2A8BEFE500A45BD8 /* ContentView.swift in Sources */,
 				2A3594DC2A8C0F7000A45BD8 /* Trips.swift in Sources */,
@@ -410,8 +444,10 @@
 				2A3594E02A8C123700A45BD8 /* IdentifiableString.swift in Sources */,
 				2A1A4C0B2A8D2E6E00B3286F /* TripView.swift in Sources */,
 				2A1A4C0D2A8D495F00B3286F /* LanguageOptions.swift in Sources */,
+				2A5310C32A91087C007E7C33 /* Helpers.swift in Sources */,
 				2AB33A382A90BB0D00DF7D1A /* baseURL.swift in Sources */,
 				2A8A631A2A8E7ADA008BD179 /* TripDetail.swift in Sources */,
+				2A5012742A914FCE009C9433 /* GetTrips.swift in Sources */,
 				2A35949C2A8BEFE500A45BD8 /* TogTjekApp.swift in Sources */,
 				2A3594CF2A8BF68F00A45BD8 /* Train.swift in Sources */,
 				2A11C3EE2A8F8E41001431CC /* UpcomingTrip.swift in Sources */,

@@ -10,15 +10,15 @@ import SwiftUI
 struct UpcomingList: View {
     var body: some View {
         Section {
-            ForEach(0..<3) { i in
-                NavigationLink {
-                    ProminentTripView()
-
-                } label: {
-                    UpcomingTrip()
-                }
-                .listRowBackground(i == 0 ? Color.red : Color.green)
-            }
+//            ForEach(0..<3) { i in
+//                NavigationLink {
+//                    ProminentTripView()
+//
+//                } label: {
+//                    UpcomingTrip()
+//                }
+//                .listRowBackground(i == 0 ? Color.red : Color.green)
+//            }
         }
     header: {
         Text("Upcoming")

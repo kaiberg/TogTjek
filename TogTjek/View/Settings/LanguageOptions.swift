@@ -16,7 +16,9 @@ struct LanguageOptions: View {
                 Spacer()
                 Text(currentLanguage)
                     .foregroundStyle(.secondary)
-            }.onTapGesture {
+            }
+            .contentShape(Rectangle())
+            .onTapGesture {
                 if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
                     
                     UIApplication.shared.open(settingsUrl)

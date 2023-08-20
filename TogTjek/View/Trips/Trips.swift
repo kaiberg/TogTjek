@@ -12,7 +12,6 @@ struct Trips: View {
         
         List {
             UpcomingList()
-            ProminentTripView()
             TripsList(title: "Departures", trips: SampleData.departureTrips)
             TripsList(title: "Arrivals", trips: SampleData.homeTrips)
         }
