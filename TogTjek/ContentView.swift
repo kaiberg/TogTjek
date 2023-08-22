@@ -7,29 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var showSheet = false
-    
+struct ContentView: View {    
     var body: some View {
         TabView {
-            NavigationStack {
-                Trips()
-                    .toolbar {
-                        Button {
-                            showSheet.toggle()
-                        } label: {
-                            Image(systemName: "plus")
-                        }.sheet(isPresented: $showSheet, content: {
-                            TripFinder()
-                        })
-                    }
-                    .navigationTitle("Trips")
-                    .navigationDestination(for: IdentifiableString.self) { string in
-                        TripDetail(trip: string)
-                    }
-            }                .tabItem {
-                Label("Trips", systemImage: "airplane")
-            }
+            TripsWrapper()
             
             Testing()
                 .tabItem {
@@ -38,6 +19,8 @@ struct ContentView: View {
             
             Settings()
                 .tabItem { Label("Settings", systemImage: "gear") }
+        }.onAppear {
+            print(SampleData.getTrip())
         }
     }
     

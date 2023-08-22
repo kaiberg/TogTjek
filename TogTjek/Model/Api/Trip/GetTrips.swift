@@ -19,8 +19,8 @@ class GetTrips {
         let viaId = destination.id
         let time = Helpers.shared.formatTime(time: date)
         let date = Helpers.shared.formatDate(date: date)
-
-         
+        
+        
         let route = "trip?time=\(time)&useBus=\(useBus)&originId=\(originId)&destCoordX=\(destCoordX)&destCoordY=\(destCoordY)&destCoordName=\(destCoordName)&viaId=\(viaId)&date=\(date)&format=json"
         if(API_BASE_URL == nil) { return [] }
         let urlString = "\(API_BASE_URL ?? "")/\(route)"
@@ -28,11 +28,24 @@ class GetTrips {
         print("heres the URL: \(urlString)")
         let url = URL(string: urlString)!
         let (data, response) = try! await URLSession.shared.data(from: url)
-        let decoded = try? JSONDecoder().decode(TripsJSON.self, from: data)
         
-        print("heres the decoded: \(decoded)")
-         
-        return decoded?.tripList.trip ?? []
+        if var inputString = String(data: data, encoding: .utf8) {
+            inputString = inputString.replacingOccurrences(of: "\n", with: "")
+            
+            if let modifiedData = inputString.data(using: .utf8) {
+                let decoder = JSONDecoder();
+                let decoded = try? decoder.decode(TripsJSON.self, from: modifiedData)
+                
+                print("heres the decoded: \(decoded)")
+                
+                return decoded?.tripList.trip ?? []
+                
+            }
+            
+            
+        }
+        return []
+
     }
 }
 
@@ -80,12 +93,60 @@ class Leg: Decodable, Identifiable {
 }
 
 class Destination: Decodable {
+    private var _time: String
+    private var _date: String
+    private var _rtTime: String?
+    private var _rtDate: String?
+    private var _rtTrack: String?
+    
     var name: String
     var type: String
     var routeIdx: String?
-    var time: String
-    var date: String
+    var time: Date
+    var realInformation: RealTimeInformation?
     var track: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case type
+        case routeIdx
+        case time
+        case date
+        case track
+        case _rtTime = "rtTime"
+        case _rtDate = "rtDate"
+        case _rtTrack = "rtTrack"
+
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.type = try container.decode(String.self, forKey: .type)
+        self.routeIdx = try container.decodeIfPresent(String.self, forKey: .routeIdx)
+        self._time = try container.decode(String.self, forKey: .time)
+        self._date = try container.decode(String.self, forKey: .date)
+        self.track = try container.decodeIfPresent(String.self, forKey: .track)
+        self.time = Helpers.shared.getDate(date: _date, time: _time)!
+        self._rtDate = try container.decodeIfPresent(String.self, forKey: ._rtDate)
+        self._rtTime = try container.decodeIfPresent(String.self, forKey: ._rtTime)
+        self._rtTrack = try container.decodeIfPresent(String.self, forKey: ._rtTrack)
+        
+        if(_rtDate != nil && _rtTime != nil && _rtTrack != nil) {
+            let realTime = Helpers.shared.getDate(date: _rtDate!, time: _rtTime!)!
+            self.realInformation = RealTimeInformation(time: realTime, track: _rtTrack!)
+        }
+    }
+}
+
+class RealTimeInformation {
+    var time: Date
+    var track: String
+    
+    init(time: Date, track: String) {
+        self.time = time
+        self.track = track
+    }
 }
 
 class JourneyDetailRef: Decodable {
@@ -105,16 +166,17 @@ enum MessageUnion: Decodable {
     case messageElementArray([MessageElement])
 
     init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if let x = try? container.decode([MessageElement].self) {
-            self = .messageElementArray(x)
-            return
+        do {
+            let container = try decoder.singleValueContainer()
+            if let x = try? container.decode([MessageElement].self) {
+                self = .messageElementArray(x)
+                return
+            }
+            let messageElement = try container.decode(MessageElement.self)
+            self = .messageElement(messageElement)
+        } catch {
+            throw DecodingError.typeMismatch(MessageUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for MessageUnion", underlyingError: error))
         }
-        if let x = try? container.decode(MessageElement.self) {
-            self = .messageElement(x)
-            return
-        }
-        throw DecodingError.typeMismatch(MessageUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for MessageUnion"))
     }
 }
 
@@ -134,6 +196,11 @@ class Header: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case empty = "$"
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.empty = Helpers.shared.removeNewLines(value: try container.decode(String.self, forKey: .empty))
     }
 
 }

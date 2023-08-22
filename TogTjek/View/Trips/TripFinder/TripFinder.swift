@@ -21,7 +21,6 @@ struct TripFinder: View {
                     LocationSelector(location: $from, placeholder: "From")
                     LocationSelector(location: $to, placeholder: "To")
                     TimeSelector(time: $time)
-                    
                 }
                 
                 Section {
